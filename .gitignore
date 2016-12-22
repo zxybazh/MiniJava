@@ -1,0 +1,9 @@
+# Misc
+*.pdf
+
+# Generated Excecution File
+*.class
+
+# Hello World
+hello/
+

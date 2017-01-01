@@ -1,5 +1,7 @@
 # Misc
 *.pdf
+pics/
+reference/
 
 # Generated Excecution File
 *.class
@@ -7,3 +9,6 @@
 # Hello World
 hello/
 
+# Output
+output/
+src/MiniJavaParser*

@@ -1,7 +1,7 @@
 build: MiniJava.g4
 	@rm -rf ../output
 	@mkdir ../output
-	@java -Xmx500M -cp "/usr/local/lib/antlr-4.5.3-complete.jar:$CLASSPATH" org.antlr.v4.Tool MiniJava.g4
+	@java -Xmx500M -cp "/usr/local/lib/antlr-4.5.3-complete.jar:$CLASSPATH" org.antlr.v4.Tool -visitor MiniJava.g4
 	@echo Compiled Antlr Grammer
 	@javac MiniJava*.java
 	@echo Compiled All Classes
@@ -31,3 +31,8 @@ test:
 	@echo Completed Test Treevisitor.
 gui:
 	java org.antlr.v4.gui.TestRig MiniJava goal -gui < ../sample/factorial.java
+mine: Main.java EvalVisitor.java MiniJavaBaseVisitor.java
+	@javac MiniJava*.java
+	@javac EvalVisitor.java MiniJava*.java
+	@javac Main.java EvalVisitor.java MiniJava*.java
+	@java Main < ../sample/factorial.java

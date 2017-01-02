@@ -30,9 +30,9 @@ test:
 	@java org.antlr.v4.gui.TestRig MiniJava goal -tree < ../sample/treevisitor.java > ../output/treevisitor.lisp
 	@echo Completed Test Treevisitor.
 gui:
-	java org.antlr.v4.gui.TestRig MiniJava goal -gui < ../sample/factorial.java
+	java org.antlr.v4.gui.TestRig MiniJava goal -gui < ../test/semantic/test.java
 mine: Main.java EvalVisitor.java MiniJavaBaseVisitor.java
 	@javac MiniJava*.java
 	@javac EvalVisitor.java MiniJava*.java
 	@javac Main.java EvalVisitor.java MiniJava*.java
-	@java Main < ../sample/factorial.java
+	@java Main < ../test/semantic/test.java

@@ -35,7 +35,7 @@ expression          :    expression '.length'
                     |    Identifier;
 
 parameter           :   type Identifier;
-varDeclaration      :   parameter ';';
+varDeclaration      :   type Identifier ';';
 parameterList       :   parameter (',' parameter)*;
 
 Boolean             :   'true' | 'false';

@@ -16,14 +16,22 @@ public class Main {
 
         EvalVisitor eval = new EvalVisitor();
 
-        /** 1st Vist, to check existance of type*/
         eval.visit(tree);
-        /** 2nd Vist, to check inheritance of type*/
         eval.visit(tree);
-        /** 3rd Vist, to check type match when given as arguments*/
-        eval.visit(tree);
+        //eval.visit(tree);
 
-        System.out.println("\n\n"+"Here is the Parsing Tree:\n==================\n"
-            +tree.toStringTree(parser));
+        //System.out.println(eval.Existance);
+        //System.out.println(eval.Inheritance);
+        //System.out.println(eval.Function);
+        //System.out.println(eval.Definition);
+        //System.out.println(eval.Invoke);
+        //System.out.println(eval.ParameterNum);
+        //System.out.println(eval.Parameters);
+
+        if (eval.FinalMessage.equals("")) eval.FinalMessage = "Method Invoke Check Passed : )";
+        System.out.println(eval.FinalMessage);
+
+        //System.out.println("\n\n"+"Here is the Parsing Tree:\n======================\n"
+        //    +tree.toStringTree(parser));
     }
 }

@@ -2,7 +2,7 @@
 The repository for Compiler project of a MiniJava Parser Front-end upon ANTLR 4.
 You can see the pared AST tree using ANTLR TestRig.
 
-##Prerequisites
+## Prerequisites
 
 **Java Runtime**(1.6 or higher)
 
@@ -13,7 +13,7 @@ $ cd /usr/local/lib
 $ curl -O http://www.antlr.org/download/antlr-4.5.3-complete.jar
 ```
 
-##Getting Started with MiniJava
+## Getting Started with MiniJava
 
 To simply build from my MiniJava Grammar File, you can use my `makefile`.
 
@@ -40,7 +40,7 @@ $ javac Main.java EvalVisitor.java MiniJava*.java
 $ java Main < ../test/semantic/test.java
 ```
 
-##Helpful Links
+## Helpful Links
 [Getting Started with ANTLR v4](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md)
 
 [BNF for MiniJava](http://www.cambridge.org/us/features/052182060X/grammar.html)

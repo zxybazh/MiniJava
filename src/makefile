@@ -1,7 +1,7 @@
 build: MiniJava.g4
 	@rm -rf ../output
 	@mkdir ../output
-	@java -Xmx500M -cp "/usr/local/lib/antlr-4.5.3-complete.jar:$CLASSPATH" org.antlr.v4.Tool -visitor MiniJava.g4
+	@java -Xmx500M -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool -visitor MiniJava.g4
 	@echo Compiled Antlr Grammer
 	@javac MiniJava*.java
 	@echo Compiled All Classes
